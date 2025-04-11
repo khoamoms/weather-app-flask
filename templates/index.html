@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Thời tiết hôm nay</h1>
+    </header>
+    <main>
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Nhập tên thành phố...">
+            <button onclick="getWeather()">Lấy thời tiết</button>
+        </div>
+        <div id="successMessage"></div>
+        <div class="card-container" id="weatherCardContainer"></div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
