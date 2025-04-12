@@ -6,13 +6,25 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Header -->
+    <header>
         <h1>Tra cứu thời tiết</h1>
-        <input type="text" id="cityInput" placeholder="Nhập tên thành phố">
-        <button onclick="getWeather()">Xem thời tiết</button>
-        <p id="successMessage" style="display:none;"></p>
-        <div id="weatherCardContainer"></div>
-    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Input Group -->
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Nhập tên thành phố">
+            <button onclick="getWeather()">Xem thời tiết</button>
+        </div>
+
+        <!-- Success Message -->
+        <p id="successMessage"></p>
+
+        <!-- Weather Cards -->
+        <div class="card-container" id="weatherCardContainer"></div>
+    </main>
 
     <script src="/static/script.js"></script>
 </body>
