@@ -2,27 +2,24 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Dự báo thời tiết</title>
+    <title>Thời tiết hôm nay</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Tra cứu thời tiết</h1>
+        <h1>Thời tiết hôm nay</h1>
     </header>
 
-    <!-- Main Content -->
+    <!-- Nội dung chính -->
     <main>
-        <!-- Input Group -->
         <div class="input-group">
-            <input type="text" id="cityInput" placeholder="Nhập tên thành phố">
-            <button onclick="getWeather()">Xem thời tiết</button>
+            <input type="text" id="cityInput" placeholder="Nhập tên thành phố...">
+            <button onclick="getWeather()">Lấy thời tiết</button>
         </div>
 
-        <!-- Success Message -->
         <p id="successMessage"></p>
 
-        <!-- Weather Cards -->
         <div class="card-container" id="weatherCardContainer"></div>
     </main>
 
