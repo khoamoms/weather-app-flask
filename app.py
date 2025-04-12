@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-API_KEY = 'YOUR_OPENWEATHER_API_KEY'  # Thay bằng key thật của bạn
+API_KEY = '7e9df764fef97426d3a7f538fd075c98'  # Thay bằng key thật của bạn
 
 @app.route('/')
 def index():
